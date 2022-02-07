@@ -1,0 +1,210 @@
+
+body{
+    background-color:rgb(55, 59, 59);
+    padding: 20px 20px;
+}
+
+.titulo{
+    display: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.grid-container {
+    background-color: rgb(72, 126, 97);
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(4,85px);
+    grid-template-rows: repeat(7,85px);
+
+    grid-template-areas: 
+        'd d d d'
+        'd d d d'
+        'c c c divi'
+        'sie och nue por'
+        'cua cin sei men'
+        'uno dos tre mas'
+        'cer cer com igu';
+
+    line-height: normal;
+    border-radius: 25px;
+    padding: 2rem 1rem 1rem 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.562);
+}
+
+button{
+    border-radius: 25px;
+    background-color: rgb(105, 172, 144);
+    color: rgb(238, 245, 245);
+    border: 1px solid rgb(105, 172, 144);
+    text-align: center;
+    /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.562); */
+    box-shadow: 1px 20px 50px -15px #000000c2;
+    
+}
+button:hover{
+    background-color: rgb(85, 138, 116);
+    border: 1px solid rgb(85, 138, 116);
+}
+
+button:active{
+    background-color: rgb(194, 175, 68);
+    border-color: rgb(194, 175, 68);
+    box-shadow: none;
+    
+}
+
+#display{
+    overflow: hidden;
+    grid-area: d;
+    /* grid-column: 4 span;
+    grid-row: 2 span; */
+    /* grid-template-columns: 580px; */
+    background-color: rgba(14, 13, 13, 0.705);
+    margin-bottom: 15px;
+    border-radius: 25px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.562);
+    color: azure;
+
+    display: flex;
+    align-items:flex-end;
+    justify-content: end;
+    /* padding-left: 15px; */
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+#displayOculto{
+    display: flex;
+    justify-content: flex-end;
+    /* text-align: right; */
+    overflow: hidden;
+    grid-area: d;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.borrar{
+    grid-area: c;
+    /* grid-column-start: 2 ; */
+    /* grid-column-end: 4; */
+    /* grid-column: 3 span; */
+    /* border-radius: 25px; */
+}
+
+.multiplicar{
+    grid-area: por;
+}
+.dividir{
+    grid-area: divi;
+}
+.coma{
+    grid-area: com;
+}
+
+.menos{
+    grid-area: men;
+}
+.mas{
+    grid-area: mas;
+}
+
+
+
+.igual{
+    grid-area: igu;
+}
+
+.num0{
+    grid-area: cer;
+    /* grid-column: 2 span; */
+}
+
+.num1{
+    grid-area: uno;
+}
+
+.num2{
+    grid-area: dos;
+}
+
+.num3{
+    grid-area: tre;
+}
+
+.num4{
+    grid-area: cua;
+}
+
+.num5{
+    grid-area: cin ;
+}
+
+.num6{
+    grid-area:  sei;
+}
+
+.num7{
+    grid-area: sie ;
+}
+
+.num8{
+    grid-area: och;
+}
+
+.num9{
+    grid-area: nue;
+}
+
+@media (min-width: 800px) {
+    
+    body{
+        background-color: rgb(55, 59, 59);
+        
+    }
+    
+    /* .titulo{
+        font-size: 4rem;
+        font-weight:  600;
+        padding-top: 5px;
+        
+        display: block;
+        font-family: "Roboto",sans-serif;
+        color: rgb(181, 194, 189);
+        text-align: center;
+        padding-bottom: 10px;
+    }     */
+    
+    .grid-container {
+        /* width: min(80vh 80vw); */
+        width: 60vw;
+        height: 94vh;
+        grid-template-columns: repeat(10,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-template-areas: 
+        'd d d d d d d d d d'
+        'd d d d d d d d d d'
+        'd d d d d d d d d d'
+        'sie sie och och nue nue c c c igu'
+        'cua cua cin cin sei sei por mas mas igu'
+        'uno uno dos dos tre tre divi men men igu'
+        'cer cer cer cer cer cer com com com igu';
+        
+        column-gap: 25px;
+        row-gap: 25px;
+        
+    }
+    
+    
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Timer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    
+    <div class="container-fluid p-2 my-3" style="background-color: rgba(67, 66, 82, 0.712); color: white;">
+        
+        <h1 style="font-size: 4rem; text-align: center; font-family: monospace">TIMER</h1>
+
+    </div>
+
+    <div class="container pt-3">
+
+        <p style="text-align: center; font-family: monospace; font-size: 1.5rem; ">Set the time (seconds) and press start</p>
+
+        <div style="width: 30.2rem; height: 10rem; margin-left: 40%; font-size: 5rem; text-align: center;">
+
+            <button id="numero1" style="border: 3.5px solid rgba(77, 77, 77, 0.445); width: 7rem; height: 9rem; border-radius: 8px; margin-right: 5px; float: left;" onclick="algo('numero1')">0</button>
+            
+            <button id="numero2" style="border: 3.5px solid rgba(77, 77, 77, 0.445); width: 7rem; height: 9rem; border-radius: 8px; float: left;" onclick="algo('numero2')">0</button>
+           
+            <!--  <div style="width: 0.5rem; height: 9rem; margin-left: 3px; float: left; font-size: 5rem;">:</div>
+            <button id="numero3" style="border: 3.5px solid rgba(77, 77, 77, 0.445); width: 7rem; height: 9rem; border-radius: 8px; float: right;" onclick="algo('numero3')">0</button>
+            <button id="numero4" style="border: 3.5px solid rgba(77, 77, 77, 0.445); width: 7rem; height: 9rem; border-radius: 8px; margin-right: 5px; float: right;" onclick="algo('numero4')">0</button>
+        -->
+
+        </div>
+
+        <br>
+        <DIv style="text-align: center;">   
+        
+            <button type="button" class="btn btn-outline-success" onclick="empezar();">START</button>
+        
+        </DIv>
+
+    </div>
+
+
+<!-- PRUEBA -->
+<!-- <p id="demo"></p>
+
+<button onclick="myStopFunction()">Stop time</button>
+
+<script>
+    const myInterval = setInterval(myTimer, 1000);
+    
+    function myTimer() {
+      const date = new Date();
+      document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+    }
+    
+    function myStopFunction() {
+      clearInterval(myInterval);
+    }
+</script> -->
+
+
+</body>
+
+<script src="timer.js"></script>
+
+</html>
